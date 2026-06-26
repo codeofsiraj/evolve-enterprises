@@ -63,13 +63,16 @@ header.scrolled {
   justify-content: space-between;
 }
 .nav-logo {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--slate-900);
-  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
-.nav-logo span { color: var(--indigo); }
+.nav-logo img {
+  width: auto;
+  height: clamp(52px, 6vw, 70px);
+  max-width: 156px;
+  object-fit: contain;
+}
 nav { display: flex; align-items: center; gap: 2.5rem; }
 nav a {
   font-size: 0.8rem;
@@ -139,14 +142,14 @@ footer {
   margin-bottom: 4rem;
 }
 .footer-brand-name {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--white);
   margin-bottom: 1rem;
-  letter-spacing: -0.02em;
 }
-.footer-brand-name span { color: var(--indigo); }
+.footer-brand-name img {
+  width: auto;
+  height: clamp(70px, 7vw, 92px);
+  max-width: 190px;
+  object-fit: contain;
+}
 .footer-desc { font-size: 0.875rem; color: var(--slate-400); line-height: 1.7; }
 .footer-col h4 {
   font-size: 0.75rem;
